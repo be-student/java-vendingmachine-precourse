@@ -1,4 +1,4 @@
-package vendingmachine;
+package vendingmachine.domain;
 
 public enum Coin {
     COIN_500(500),
@@ -8,7 +8,7 @@ public enum Coin {
 
     private final int amount;
 
-    Coin(final int amount) {
+    Coin(int amount) {
         this.amount = amount;
     }
 

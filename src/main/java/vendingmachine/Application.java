@@ -1,7 +1,12 @@
 package vendingmachine;
 
+import vendingmachine.adapter.in.client.VendingClient;
+import vendingmachine.application.VendingService;
+
 public class Application {
+
     public static void main(String[] args) {
-        // TODO: 프로그램 구현
+        VendingClient vendingClient = new VendingClient(new VendingService());
+        vendingClient.run();
     }
 }
